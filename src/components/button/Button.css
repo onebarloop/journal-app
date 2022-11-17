@@ -1,0 +1,11 @@
+.button {
+  background-color: var(--color-nemo);
+  width: 6rem;
+  align-self: center;
+  border: none;
+  border-radius: 1rem;
+}
+
+.button:hover {
+  background-color: var(--color-nemo-dark);
+}
