@@ -6,7 +6,7 @@ import Star from "../../assets/star";
 
 export default function EntriesSection() {
   return (
-    <>
+    <section>
       <TabBar>
         <Tab name="TAB" number={1} icon={<Star width={18} height={18} />} />
         <Tab name="TAB" number={2} icon={<Star width={18} height={18} />} />
@@ -24,6 +24,6 @@ export default function EntriesSection() {
           icon={<Star width={24} height={24} />}
         />
       </List>
-    </>
+    </section>
   );
 }
