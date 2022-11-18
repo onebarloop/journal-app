@@ -13,12 +13,19 @@ export default function EntriesSection() {
       </TabBar>
       <List>
         <Item
+          date="01.01.2022"
           title="Item eins"
           text="Dies ist ein Fließtext"
           icon={<Star width={24} height={24} />}
         />
-        <Item title="Item zwei" text="Dies ist ein Fließtext" />
         <Item
+          date="05.05.2023"
+          title="Item zwei"
+          text="Dies ist ein Fließtext Dies ist ein Fließtext Dies ist ein Fließtext Dies ist ein Fließtext Dies ist ein Fließtext Dies ist ein Fließtext Dies ist ein Fließtext Dies ist ein Fließtext Dies ist ein Fließtext"
+          icon={<Star width={24} height={24} />}
+        />
+        <Item
+          date="01.01.2000"
           title="Item drei"
           text="Dies ist ein Fließtext"
           icon={<Star width={24} height={24} />}
