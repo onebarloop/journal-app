@@ -1,5 +1,6 @@
 .button {
   background-color: var(--color-nemo);
+  color: black;
   width: 6rem;
   align-self: center;
   border: none;
