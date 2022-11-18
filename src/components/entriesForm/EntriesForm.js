@@ -18,7 +18,11 @@ export default function EntriesForm() {
         <label htmlFor="motto">Motto</label>
         <input id="motto"></input>
         <label htmlFor="notes">Notes</label>
-        <textarea id="notes" rows={8}></textarea>
+        <textarea
+          id="notes"
+          placeholder="Liebes Tagebuch..."
+          rows={8}
+        ></textarea>
         <Button name="SUBMIT" />
       </fieldset>
     </form>

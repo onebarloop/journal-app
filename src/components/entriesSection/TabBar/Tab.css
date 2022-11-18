@@ -1,5 +1,5 @@
 .tab {
-  border: 2px solid var(--color-granite);
+  border: 0.7px solid var(--color-granite);
   border-bottom: none;
   padding: 0.2rem 0.4rem;
   border-radius: 0.5rem 0.5rem 0 0;
