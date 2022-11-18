@@ -12,7 +12,7 @@ export default function EntriesForm() {
       <label htmlFor="motto">Motto</label>
       <input id="motto"></input>
       <label htmlFor="notes">Notes</label>
-      <textarea id="notes"></textarea>
+      <textarea id="notes" rows={8}></textarea>
       <Button name="SUBMIT" />
     </form>
   );

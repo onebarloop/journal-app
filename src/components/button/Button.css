@@ -4,6 +4,8 @@
   align-self: center;
   border: none;
   border-radius: 1rem;
+  font-size: 1.1rem;
+  padding: 0.3rem;
 }
 
 .button:hover {

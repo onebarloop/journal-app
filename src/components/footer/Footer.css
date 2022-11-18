@@ -1,4 +1,6 @@
 .footer {
   background-color: var(--color-granite);
   color: var(--color-foam);
+  padding: 0.8rem;
+  text-align: center;
 }

@@ -1,7 +1,9 @@
-export default function Tab({ name, number }) {
+import "./Tab.css";
+
+export default function Tab({ name, number, icon }) {
   return (
-    <span>
-      {name} {number}
+    <span className="tab">
+      {name} {number} {icon}
     </span>
   );
 }
