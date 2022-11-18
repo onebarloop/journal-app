@@ -4,6 +4,8 @@ import TabBar from "./TabBar/TabBar";
 import Tab from "./TabBar/Tab";
 import Star from "../../assets/star";
 
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+
 export default function EntriesSection() {
   return (
     <section>
@@ -16,19 +18,19 @@ export default function EntriesSection() {
           date="01.01.2022"
           title="Item eins"
           text="Dies ist ein Fließtext"
-          icon={<Star width={24} height={24} />}
+          icon={<FontAwesomeIcon icon="fas fa-sun" />}
         />
         <Item
           date="05.05.2023"
           title="Item zwei"
           text="Dies ist ein Fließtext Dies ist ein Fließtext Dies ist ein Fließtext Dies ist ein Fließtext Dies ist ein Fließtext Dies ist ein Fließtext Dies ist ein Fließtext Dies ist ein Fließtext Dies ist ein Fließtext"
-          icon={<Star width={24} height={24} />}
+          icon={<FontAwesomeIcon icon="fas fa-cloud-rain" />}
         />
         <Item
           date="01.01.2000"
           title="Item drei"
           text="Dies ist ein Fließtext"
-          icon={<Star width={24} height={24} />}
+          icon={<FontAwesomeIcon icon="fas fa-grin-tears" bounce />}
         />
       </List>
     </section>

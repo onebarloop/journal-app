@@ -14,13 +14,13 @@
 }
 
 @font-face {
-  font-family: "NotoSans";
-  src: url("./fonts/Noto_Sans/NotoSans-Regular.ttf");
+  font-family: "Roboto";
+  src: url("./fonts/Roboto/Roboto-Regular.ttf");
 }
 
 @font-face {
-  font-family: "NotoSans";
-  src: url("./fonts/Noto_Sans/NotoSans-Bold.ttf");
+  font-family: "Roboto";
+  src: url("./fonts/Roboto/Roboto-Bold.ttf");
   font-weight: bold;
 }
 
@@ -37,7 +37,7 @@ body {
   background-color: var(--color-foam);
   color: var(--color-granite);
   width: 20rem;
-  font-family: "NotoSans";
+  font-family: "Roboto";
   border: 1px solid var(--color-water-10);
   padding: 0.3rem;
 }
