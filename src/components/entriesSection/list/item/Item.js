@@ -7,7 +7,7 @@ export default function Item({ title, text, date, icon }) {
         <p className="date">{date}</p>
         <p className="title">
           {title}
-          <span>{icon}</span>
+          <span className="icon">{icon}</span>
         </p>
 
         <p className="text">{text}</p>

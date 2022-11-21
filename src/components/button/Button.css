@@ -1,14 +1,19 @@
 .button {
   background-color: var(--color-nemo);
   color: black;
-  width: 6rem;
+  width: 8rem;
   align-self: center;
   border: none;
-  border-radius: 1rem;
+  border-radius: 0.5rem;
   font-size: 1.1rem;
   padding: 0.3rem;
+  cursor: pointer;
 }
 
 .button:hover {
   background-color: var(--color-nemo-dark);
+}
+
+.button:active {
+  background-color: var(--color-nemo-mid);
 }

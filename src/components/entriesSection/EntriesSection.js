@@ -3,6 +3,7 @@ import Item from "./list/item/Item";
 import TabBar from "./TabBar/TabBar";
 import Tab from "./TabBar/Tab";
 import Star from "../../assets/star";
+import StarFilled from "../../assets/star-filled";
 
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
@@ -11,7 +12,11 @@ export default function EntriesSection() {
     <section>
       <TabBar>
         <Tab name="TAB" number={1} icon={<Star width={18} height={18} />} />
-        <Tab name="TAB" number={2} icon={<Star width={18} height={18} />} />
+        <Tab
+          name="TAB"
+          number={2}
+          icon={<StarFilled width={18} height={18} />}
+        />
       </TabBar>
       <List>
         <Item
