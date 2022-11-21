@@ -22,8 +22,13 @@
 
 .icon {
   cursor: pointer;
+  color: black;
 }
 
-.icon:hover {
+.icon--clicked {
   color: var(--color-nemo-dark);
 }
+
+/*.icon:hover {
+  color: var(--color-nemo-dark);
+}*/
