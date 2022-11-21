@@ -3,4 +3,7 @@
   flex-direction: column;
   margin: 2rem 0 2.3rem 0;
   gap: 1rem;
+  border: var(--color-water-10) 0.5px solid;
+  border-radius: 0.5rem;
+  padding-top: 1rem;
 }
