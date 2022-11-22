@@ -5,7 +5,7 @@ import Tab from "./TabBar/Tab";
 
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
-export default function EntriesSection() {
+export default function EntriesSection({ entries }) {
   return (
     <section>
       <TabBar>
@@ -17,7 +17,7 @@ export default function EntriesSection() {
           inActive
         />
       </TabBar>
-      <List />
+      <List entries={entries} />
     </section>
   );
 }

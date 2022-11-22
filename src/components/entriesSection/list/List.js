@@ -3,12 +3,12 @@ import Item from "./item/Item";
 import Divider from "../../divider/Divider";
 import { Fragment } from "react";
 
-export default function List() {
+export default function List({ entries }) {
   const [lastItem] = entries.slice(-1);
   return (
     <ul className="list">
       {entries.map((entry) => (
-        <Fragment key={entry.id}>
+        <Fragment key={entry.motto}>
           <Item title={entry.motto} text={entry.notes} date={entry.date} />
           {entry === lastItem ? "" : <Divider />}
         </Fragment>
@@ -17,7 +17,7 @@ export default function List() {
   );
 }
 
-const entries = [
+/*const entries = [
   {
     id: 1000,
     date: "Feb 5, 2025",
@@ -45,4 +45,4 @@ const entries = [
     motto: "I'm a React Developer",
     notes: "My React-ion when I learned about React: 😍",
   },
-];
+];*/

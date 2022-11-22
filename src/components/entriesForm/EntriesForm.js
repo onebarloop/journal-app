@@ -1,24 +1,22 @@
 import "./Form.css";
 import Button from "../button/Button";
-import date from "date-and-time";
 
-const now = new Date();
-
-export default function EntriesForm({ onCreateEntry }) {
+export default function EntriesForm({ onCreateEntry, actualDate }) {
   function handleSubmit(event) {
     event.preventDefault();
     onCreateEntry(
       event.target.elements.motto.value,
       event.target.elements.notes.value
     );
+    event.target.elements.motto.value = "";
+    event.target.elements.notes.value = "";
+    event.target.elements.motto.focus();
   }
 
   return (
     <form onSubmit={handleSubmit}>
       <fieldset className="form">
-        <legend style={{ fontWeight: "bold" }}>
-          {date.format(now, "ddd, MMM DD YYYY")}
-        </legend>
+        <legend style={{ fontWeight: "bold" }}>{actualDate}</legend>
         <label htmlFor="motto">Motto</label>
         <input id="motto" name="motto"></input>
         <label htmlFor="notes">Notes</label>
