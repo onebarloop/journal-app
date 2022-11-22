@@ -1,23 +1,16 @@
 import "./Form.css";
 import Button from "../button/Button";
 import date from "date-and-time";
-import useLocalStorageState from "use-local-storage-state";
 
 const now = new Date();
 
-export default function EntriesForm() {
-  const [entries, setEntries] = useLocalStorageState("localEntry", {
-    defaultValue: [],
-  });
-  console.log(entries);
-
+export default function EntriesForm({ onCreateEntry }) {
   function handleSubmit(event) {
     event.preventDefault();
-    const newEntry = {
-      motto: event.target.elements.motto.value,
-      notes: event.target.elements.notes.value,
-    };
-    setEntries([...entries, newEntry]);
+    onCreateEntry(
+      event.target.elements.motto.value,
+      event.target.elements.notes.value
+    );
   }
 
   return (
