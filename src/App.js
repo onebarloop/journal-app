@@ -6,6 +6,8 @@ import Main from "./components/main/Main";
 import Footer from "./components/footer/Footer";
 import EntriesForm from "./components/entriesForm/EntriesForm";
 import EntriesSection from "./components/entriesSection/EntriesSection";
+//import { useState } from "react";
+import { Fragment } from "react";
 
 //fontawesome library
 import { library } from "@fortawesome/fontawesome-svg-core";

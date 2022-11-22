@@ -7,6 +7,10 @@
   cursor: pointer;
 }
 
+.tab--inactive {
+  opacity: 50%;
+}
+
 .tab:hover {
   background-color: var(--color-water-10);
 }

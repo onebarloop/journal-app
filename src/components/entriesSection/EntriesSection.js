@@ -14,6 +14,7 @@ export default function EntriesSection() {
           name="TAB"
           number={2}
           icon={<FontAwesomeIcon icon="cloud-rain" flip />}
+          inActive
         />
       </TabBar>
       <List />

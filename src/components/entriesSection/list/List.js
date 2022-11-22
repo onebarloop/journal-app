@@ -5,13 +5,11 @@ import { Fragment } from "react";
 
 export default function List() {
   const [lastItem] = entries.slice(-1);
-  console.log(lastItem);
   return (
     <ul className="list">
       {entries.map((entry) => (
         <Fragment key={entry.id}>
           <Item title={entry.motto} text={entry.notes} date={entry.date} />
-          {console.log(entry)}
           {entry === lastItem ? "" : <Divider />}
         </Fragment>
       ))}
