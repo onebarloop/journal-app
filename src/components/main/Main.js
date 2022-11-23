@@ -21,10 +21,10 @@ export default function Main() {
   });
   console.log(entries);
 
-  function handleCreateEntry(mottoPara, notesPara) {
+  function handleCreateEntry(data) {
     const newEntry = {
-      motto: mottoPara,
-      notes: notesPara,
+      motto: data.motto,
+      notes: data.notes,
       date: actualDate,
     };
     setEntries([...entries, newEntry]);

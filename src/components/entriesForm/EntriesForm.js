@@ -4,13 +4,12 @@ import Button from "../button/Button";
 export default function EntriesForm({ onCreateEntry, actualDate }) {
   function handleSubmit(event) {
     event.preventDefault();
-
-    onCreateEntry(
-      event.target.elements.motto.value,
-      event.target.elements.notes.value
-    );
-    event.target.elements.motto.value = "";
-    event.target.elements.notes.value = "";
+    const data = {
+      motto: event.target.elements.motto.value,
+      notes: event.target.elements.notes.value,
+    };
+    onCreateEntry(data);
+    event.target.reset();
     event.target.elements.motto.focus();
   }
 
