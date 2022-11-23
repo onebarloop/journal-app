@@ -22,7 +22,9 @@ export default function Main() {
       },
     ],
   });
-  console.log(entries);
+
+  const likedEntries = entries.filter((entry) => entry.isFavourite);
+  console.log(likedEntries);
 
   function handleCreateEntry(data) {
     const newEntry = data;
@@ -46,6 +48,7 @@ export default function Main() {
     <section className="main">
       <EntriesForm onCreateEntry={handleCreateEntry} actualDate={actualDate} />
       <EntriesSection
+        likedEntries={likedEntries}
         entries={entries}
         onToggleFavourite={handleToggleFavourite}
       />
