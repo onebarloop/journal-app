@@ -17,7 +17,8 @@ export default function Main() {
         notes:
           "Heute war ein schöner Tag. Ich bin mit Delfinen geschwommen, habe die Alpen bestiegen und abends gabs Pizza!",
         date: "Mai 05 1993",
-        id: 4234324,
+        id: 1298127987,
+        isFavourite: false,
       },
     ],
   });
@@ -25,13 +26,28 @@ export default function Main() {
 
   function handleCreateEntry(data) {
     const newEntry = data;
-    setEntries([...entries, { id: nanoid(), date: actualDate, ...newEntry }]);
+    setEntries([
+      ...entries,
+      { isFavourite: false, id: nanoid(), date: actualDate, ...newEntry },
+    ]);
+  }
+
+  function handleToggleFavourite(id, isFavourite) {
+    setEntries(
+      entries.map((entry) => {
+        if (entry.id === id) return { ...entry, isFavourite: !isFavourite };
+        return entry;
+      })
+    );
   }
 
   return (
     <section className="main">
       <EntriesForm onCreateEntry={handleCreateEntry} actualDate={actualDate} />
-      <EntriesSection entries={entries} />
+      <EntriesSection
+        entries={entries}
+        onToggleFavourite={handleToggleFavourite}
+      />
     </section>
   );
 }

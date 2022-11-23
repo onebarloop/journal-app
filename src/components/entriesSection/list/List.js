@@ -3,13 +3,20 @@ import Item from "./item/Item";
 import Divider from "../../divider/Divider";
 import { Fragment } from "react";
 
-export default function List({ entries }) {
+export default function List({ entries, isFavourite, onToggleFavourite }) {
   const [lastItem] = entries.slice(-1);
   return (
     <ul className="list">
       {entries.map((entry) => (
         <Fragment key={entry.id}>
-          <Item title={entry.motto} text={entry.notes} date={entry.date} />
+          <Item
+            title={entry.motto}
+            text={entry.notes}
+            date={entry.date}
+            id={entry.id}
+            isFavourite={entry.isFavourite}
+            onToggleFavourite={onToggleFavourite}
+          />
           {entry === lastItem ? "" : <Divider />}
         </Fragment>
       ))}
