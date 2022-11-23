@@ -3,7 +3,7 @@ import Item from "./item/Item";
 import Divider from "../../divider/Divider";
 import { Fragment } from "react";
 
-export default function List({ entries, isFavourite, onToggleFavourite }) {
+export default function List({ entries, onToggleFavourite }) {
   const [lastItem] = entries.slice(-1);
   return (
     <ul className="list">

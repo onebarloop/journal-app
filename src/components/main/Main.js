@@ -32,10 +32,11 @@ export default function Main() {
     ]);
   }
 
-  function handleToggleFavourite(id, isFavourite) {
+  function handleToggleFavourite(id) {
     setEntries(
       entries.map((entry) => {
-        if (entry.id === id) return { ...entry, isFavourite: !isFavourite };
+        if (entry.id === id)
+          return { ...entry, isFavourite: !entry.isFavourite };
         return entry;
       })
     );
