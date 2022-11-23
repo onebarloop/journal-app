@@ -8,7 +8,7 @@ export default function List({ entries }) {
   return (
     <ul className="list">
       {entries.map((entry) => (
-        <Fragment key={entry.motto}>
+        <Fragment key={entry.id}>
           <Item title={entry.motto} text={entry.notes} date={entry.date} />
           {entry === lastItem ? "" : <Divider />}
         </Fragment>
