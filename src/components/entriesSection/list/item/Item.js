@@ -1,5 +1,5 @@
 import "./Item.css";
-import FavButton from "../../../../assets/FavButton";
+import FavButton from "./FavButton";
 
 export default function Item({ title, text, date }) {
   return (

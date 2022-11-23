@@ -1,6 +1,6 @@
 import { useState } from "react";
-import StarFilled from "./star-filled";
-import Star from "./star";
+import StarFilled from "../../../../assets/star-filled";
+import Star from "../../../../assets/star";
 
 export default function FavButton() {
   const [isFavourite, setFavourite] = useState(false);
