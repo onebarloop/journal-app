@@ -1,6 +1,7 @@
 import "./List.css";
 import Item from "./item/Item";
 import Divider from "../../divider/Divider";
+import styled from "styled-components";
 import { Fragment } from "react";
 
 export default function List({
