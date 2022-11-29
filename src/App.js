@@ -1,5 +1,3 @@
-import "./App.css";
-
 //component imports
 import Header from "./components/header/Header";
 import Main from "./components/main/Main";
@@ -12,11 +10,13 @@ import {
   faCloudRain,
   faSun,
 } from "@fortawesome/free-solid-svg-icons";
+import GlobalStyle from "./globalStyles";
 library.add(faGrinTears, faCloudRain, faSun);
 
 function App() {
   return (
     <>
+      <GlobalStyle />
       <Header />
       <Main />
       <Footer />

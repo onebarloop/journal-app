@@ -1,3 +1,7 @@
+import { createGlobalStyle } from "styled-components";
+import robotoRegular from "./fonts/Roboto/Roboto-Regular.ttf";
+import robotoBold from "./fonts/Roboto/Roboto-Bold.ttf";
+const GlobalStyle = createGlobalStyle`
 :root {
   /* Used for texts (+ footer background) */
   --color-granite: #252629;
@@ -15,14 +19,15 @@
 
 @font-face {
   font-family: "Roboto";
-  src: url("./fonts/Roboto/Roboto-Regular.ttf");
+  src: local("robotoRegular"),
+  url(${robotoRegular});
 }
 
 @font-face {
   font-family: "Roboto";
-  src: url("./fonts/Roboto/Roboto-Bold.ttf");
   font-weight: bold;
-}
+  src: local("robotoBold"),
+  url(${robotoBold});
 
 @media only screen and (max-width: 600px) {
   body {
@@ -41,3 +46,6 @@ body {
   border: 1px solid var(--color-water-10);
   padding: 0.3rem;
 }
+`;
+
+export default GlobalStyle;

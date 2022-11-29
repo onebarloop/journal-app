@@ -1,9 +1,15 @@
-import "./Header.css";
+import styled from "styled-components";
 
 export default function Header() {
   return (
-    <header className="header">
+    <StyledHeader>
       <h1>Meine kleine App</h1>
-    </header>
+    </StyledHeader>
   );
 }
+
+const StyledHeader = styled.header`
+  background-color: var(--color-water-10);
+  padding: 1rem;
+  border-bottom: 2px solid var(--color-nemo);
+`;
