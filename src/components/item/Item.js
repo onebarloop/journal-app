@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import FavButton from "./FavButton";
+import FavButton from "../FavButton/FavButton";
 
 export default function Item({
   title,

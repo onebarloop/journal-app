@@ -1,4 +1,5 @@
 //component imports
+import GlobalStyle from "./globalStyles";
 import Header from "./components/header/Header";
 import Main from "./components/main/Main";
 import Footer from "./components/footer/Footer";
@@ -10,7 +11,7 @@ import {
   faCloudRain,
   faSun,
 } from "@fortawesome/free-solid-svg-icons";
-import GlobalStyle from "./globalStyles";
+
 library.add(faGrinTears, faCloudRain, faSun);
 
 function App() {

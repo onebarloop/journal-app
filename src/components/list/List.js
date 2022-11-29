@@ -1,5 +1,5 @@
-import Item from "./item/Item";
-import Divider from "../../divider/Divider";
+import Item from "../item/Item";
+import Divider from "../divider/Divider";
 import styled from "styled-components";
 import { Fragment } from "react";
 

@@ -1,7 +1,7 @@
-import "./Main.css";
 import EntriesForm from "../entriesForm/EntriesForm";
 import EntriesSection from "../entriesSection/EntriesSection";
 import useLocalStorageState from "use-local-storage-state";
+import styled from "styled-components";
 
 import date from "date-and-time";
 import { nanoid } from "nanoid";
@@ -29,8 +29,8 @@ export default function Main() {
   function handleCreateEntry(data) {
     const newEntry = data;
     setEntries([
-      ...entries,
       { isFavourite: false, id: nanoid(), date: actualDate, ...newEntry },
+      ...entries,
     ]);
   }
 
@@ -45,13 +45,18 @@ export default function Main() {
   }
 
   return (
-    <section className="main">
+    <StyledMain>
       <EntriesForm onCreateEntry={handleCreateEntry} actualDate={actualDate} />
       <EntriesSection
         likedEntries={likedEntries}
         entries={entries}
         onToggleFavourite={handleToggleFavourite}
       />
-    </section>
+    </StyledMain>
   );
 }
+
+const StyledMain = styled.section`
+  display: flex;
+  flex-direction: column;
+`;

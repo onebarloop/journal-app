@@ -1,5 +1,5 @@
-import StarFilled from "../../../../assets/star-filled";
-import Star from "../../../../assets/star";
+import StarFilled from "../../assets/star-filled";
+import Star from "../../assets/star";
 import styled from "styled-components";
 
 export default function FavButton({ onToggleFavourite, isFavourite, id }) {

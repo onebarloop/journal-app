@@ -1,4 +1,4 @@
-import List from "./list/List";
+import List from "../list/List";
 import { useState } from "react";
 import styled from "styled-components";
 //import FavButton from "../../assets/FavButton";
