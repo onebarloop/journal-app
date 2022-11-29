@@ -1,5 +1,3 @@
-import "./Button.css";
-
-export default function Button({ name }) {
-  return <button className="button">{name}</button>;
+export default function Button({ name, className }) {
+  return <button className={className}>{name}</button>;
 }
